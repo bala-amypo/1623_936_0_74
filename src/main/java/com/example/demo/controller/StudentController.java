@@ -3,6 +3,7 @@ package com.example.demo.controller;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind
 
 import com.example.demo.service.StudentService;
 
@@ -13,7 +14,7 @@ public class StudentController{
     
     @PostMapping("/post")
     public StudentEntity sendData(@RequestBody StudentEntity stu){
-           return ser.postData(std); //obj.
+           return ser.postData(std); 
     }
 
 }
