@@ -14,7 +14,7 @@ public class StudentEntity{
     private String email;
     private String password;
     private Date created;
-}
+
 public Date getCreated(){
     return created;
 }
@@ -52,6 +52,4 @@ public StudentEntity(Integer id,String name,String email,String password,Date cr
     this.password=password;
     this.created=created;
 }
-public StudentEntity(){
-
 }
