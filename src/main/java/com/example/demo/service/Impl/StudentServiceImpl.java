@@ -5,7 +5,7 @@ import org.springframework.stereotype.Service;
 import com.example.demo.entity.StudentEntity;
 import com.example.demo.service.StudentService;
 import com.example.demo.repository.StudentRepo;
-import java.util.list;
+import java.util.List;
 
 @Service 
 
