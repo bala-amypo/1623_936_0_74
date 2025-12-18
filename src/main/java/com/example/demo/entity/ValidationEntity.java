@@ -71,4 +71,7 @@ public ValidationEntity(Long id,
     this.age=age;
 
         }
+        public ValidationEntity(){
+    
+}
 }
