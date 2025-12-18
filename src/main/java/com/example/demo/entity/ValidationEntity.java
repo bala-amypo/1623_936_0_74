@@ -5,6 +5,8 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Size;
+import jakarta.validation.constraints.Email;
+import jakarta.validation.constraints.Max;
 
 @Entity
 public class ValidationEntity{
@@ -14,7 +16,11 @@ public class ValidationEntity{
     @NotNull
     @Size(min = 2,max = 6, message = "must be 2 to 6 character")
     private String username;
+    @Email(message = "Email is not valid")
     private String email;
+    @Max(6)
+    @NotNull(message = "Password is mandatory")
     private String password;
+    @
     private int age;
 }
