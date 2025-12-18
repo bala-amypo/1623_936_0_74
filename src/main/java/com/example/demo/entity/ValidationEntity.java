@@ -53,7 +53,7 @@ public String getPassword(){
 public void setPassword(String password){
     this.password=password;
 }
-public void setAge(int id){
+public void setAge(int age){
     this.age=age;
 }
 public int getAge(){
