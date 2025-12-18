@@ -58,16 +58,17 @@ public void setAge(int id){
 public int getAge(){
     return age;
 }
-public StudentEntity(Integer id,String name,String email,String password,int age){
+
+public ValidationEntity(Long id,
+        @NotNull @Size(min = 2, max = 6 ,message = "must be 2 to 6 character")
+        String name, @Email(message = "Email is not valid") String email,
+        @Size(min = 2 , max = 8 , message = "must be 2 to 8 character" ) @NotNull(message = "Password is mandatory")
+        @Max(30) @Positive(message = "Age should be Positive") int age){
     this.id=id;
     this.name=name;
     this.email=email;
     this.password=password;
     this.age=age;
-}
-public ValidationEntity(Long id,
-        @NotNull @Size(min = 2, max = 6 ,message = "must be 2 to 6 character")
-        String name, @Email(message = "Email is not valid") String email,
-        @Size(min = 2 , max = 8 , message = "must be 2 to 8 character" ) @NotNull(message = "Password is mandatory")
-        @Max(30) )
+
+        }
 }
