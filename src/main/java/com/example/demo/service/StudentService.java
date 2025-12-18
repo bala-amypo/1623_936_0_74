@@ -7,5 +7,5 @@ import java.util.List;
 public interface StudentService{
     StudentEntity postData(StudentEntity stu);
 
-    List<StudentEntity>getAllData()
+    List<StudentEntity>getAllData();
 }
