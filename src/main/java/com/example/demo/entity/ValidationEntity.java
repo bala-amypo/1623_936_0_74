@@ -25,6 +25,7 @@ public class ValidationEntity{
     private String password;
     @Max(30)
     @Positive(message = "Age should be Positive")
+    @NotNull
     private int age;
 
 
