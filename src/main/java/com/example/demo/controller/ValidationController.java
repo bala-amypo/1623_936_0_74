@@ -6,6 +6,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import com.example.demo.entity.ValidationEntity;
 import com.example.demo.service.ValidationService;
+import org.springframework.web.bind.annotation.PathVariable;
 import jakarta.validation.Valid;
 
 @RestController
@@ -17,4 +18,8 @@ public class ValidationController{
     public ValidationEntity sendData(@Valid @RequestBody ValidationEntity valid){
            return ser.postData(valid); 
     }
+    @PutMapping("/put/{id}")
+public ValidationEntity putval(@PathVariable int id,@RequestBody ValidationEntity entity){
+    return ser.updateData(id,entity);
+}
 }
