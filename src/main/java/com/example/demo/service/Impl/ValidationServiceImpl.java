@@ -17,4 +17,12 @@ public class ValidationServiceImpl implements ValidationService{
       return validation.save(valid);
 
  }
+ @Override
+ public StudentEntity updateData(int id,StudentEntity entity){
+    if(student.existsById(id)){
+        entity.setId(id);
+        return student.save(entity);
+    }
+    return null;
+ }
 }
