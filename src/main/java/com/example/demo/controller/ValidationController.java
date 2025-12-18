@@ -6,13 +6,14 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import com.example.demo.entity.ValidationEntity;
 import com.example.demo.service.ValidationService;
+import jakarta.validation.Valid;
 
 @RestController
 public class ValidationController{
 
     @Autowired ValidationService ser;
     
-    @PostMapping("/post")
+    @PostMapping("/data")
     public ValidationEntity sendData(@Valid @RequestBody ValidationEntity valid){
            return ser.postData(valid); 
     }
