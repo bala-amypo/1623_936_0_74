@@ -65,5 +65,9 @@ public StudentEntity(Integer id,String name,String email,String password,int age
     this.password=password;
     this.age=age;
 }
-
+public ValidationEntity(Long id,
+        @NotNull @Size(min = 2, max = 6 ,message = "must be 2 to 6 character")
+        String name, @Email(message = "Email is not valid") String email,
+        @Size(min = 2 , max = 8 , message = "must be 2 to 8 character" ) @NotNull(message = "Password is mandatory")
+        @Max(30) )
 }
