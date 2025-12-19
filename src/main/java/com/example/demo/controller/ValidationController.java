@@ -3,7 +3,7 @@ package com.example.demo.controller;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import com.example.demo.entity.ValidationEntity;
 import com.example.demo.service.ValidationService;
@@ -19,8 +19,8 @@ public class ValidationController{
     public ValidationEntity sendData(@Valid @RequestBody ValidationEntity valid){
            return ser.postData(valid); 
     }
-    @PutMapping("/put/{id}")
-public ValidationEntity putval(@PathVariable int id,@RequestBody ValidationEntity entity){
-    return ser.updateData(id,entity);
+    @GetMapping("/getid/{id}")
+public ValidationEntity getdataid(@PathVariable int id){
+    return ser. getStudentById(id);
 }
 }
