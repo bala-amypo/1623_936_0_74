@@ -25,7 +25,8 @@ public class TimeStampEntity{
     private LocalDateTime createdAt;
     private LocalDateTime updatedAt;
     public void Oncreate(){
-      LocalDateTime now = new LocalDateTime();
+      LocalDateTime now =LocalDateTime().now();
+      this.createdAt = now;
+      this.updatedAt = now;
     }
-
 }
