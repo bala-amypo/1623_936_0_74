@@ -20,7 +20,7 @@ public class ValidationController{
            return ser.postData(valid); 
     }
     @GetMapping("/getdataid/{id}")
-public ValidationEntity getdatasid(@PathVariable int id){
+public ValidationEntity getdatasid(@PathVariable Long id){
     return ser. getStudentById(id);
 }
 }
