@@ -8,9 +8,9 @@ import jakarta.validation.constraints.Size;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.Max;
 import jakarta.validation.constraints.Positive;
-import lambok.Data;
-import lambok.AllArgsConstructor;
-import lambok.NoArgsConstructor;
+import lombok.Data;
+import lombok.AllArgsConstructor;
+import lombok.NoArgsConstructor;
 
 
 @Entity
