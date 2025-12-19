@@ -8,7 +8,6 @@ import com.example.demo.exception.ValidationException;
 
 
 @Service 
-
 public class ValidationServiceImpl implements ValidationService{
 
   @Autowired ValidationRepo validation;
