@@ -15,7 +15,8 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class StudentDetails{
       @Id 
-    @GeneratedValue(strategy=GenerationType.IDENTITY) 
+    @GeneratedValue(strategy=GenerationType.IDENTITY)
+    private int id;
     private String name;
     private String email;
     private String address;
