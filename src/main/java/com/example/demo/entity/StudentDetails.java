@@ -1,5 +1,14 @@
 package com.example.demo.entity;
 
-public class StudentDetails{
 
+@Entity
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+public class StudentDetails{
+      @Id 
+    @GeneratedValue(strategy=GenerationType.IDENTITY) 
+    private String name;
+    private String email;
+    private String address;
 }
