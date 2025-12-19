@@ -12,8 +12,8 @@ public class TimeStampController{
 
     @Autowired TimeStampService ser;
     
-    @PostMapping("/post")
-    public TimeStampEntity sendData(@RequestBody TimeStampEntity time){
+    @PostMapping("/postdata")
+    public TimeStampEntity sendidData(@RequestBody TimeStampEntity time){
            return ser.postData(time); 
     }
 }
