@@ -5,8 +5,14 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import lambok.Data;
+import lambok.AllArgsConstructor;
+import lambok.NoArgsConstructor;
+
 @Entity
 @Data
+@AllArgsContructor
+@NoArgsContructor
 public class StudentEntity{
     @Id 
     @GeneratedValue(strategy=GenerationType.IDENTITY)

@@ -9,10 +9,14 @@ import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.Max;
 import jakarta.validation.constraints.Positive;
 import lambok.Data;
+import lambok.AllArgsConstructor;
+import lambok.NoArgsConstructor;
 
 
 @Entity
 @Data
+@AllArgsContructor
+@NoArgsContructor
 public class ValidationEntity{
      @Id 
      @GeneratedValue(strategy=GenerationType.IDENTITY)
