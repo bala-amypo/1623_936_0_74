@@ -5,5 +5,5 @@ import com.example.demo.entity.StudentDetails;
 import java.util.List;
 
 public interface StudentDetailsService{
-    StudentDetails postData(StudentEntity details);
+    StudentDetails postData(StudentDetails details);
 }

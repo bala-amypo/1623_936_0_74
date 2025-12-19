@@ -12,7 +12,7 @@ import com.example.demo.repository.StudentDetailsRepo;
 
 public class StudentDetailsServiceImpl implements StudentDetailsService{
 
-    @Autowired StudentRepo studentss;
+    @Autowired StudentDetailsRepo studentss;
     
 @Override
  public StudentDetails postData(StudentDetails details){
