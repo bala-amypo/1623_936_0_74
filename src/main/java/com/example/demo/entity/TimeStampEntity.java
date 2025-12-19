@@ -10,12 +10,12 @@ import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
 import java.time.LocalDateTime;
 import jakarta.persistence.PrePersist;
+import jakarta.persistence.PreUpdate;
 
 @Entity
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-@PrePersist;
 public class TimeStampEntity{
     @Id 
     @GeneratedValue(strategy=GenerationType.IDENTITY)
@@ -24,9 +24,14 @@ public class TimeStampEntity{
     private String email;
     private LocalDateTime createdAt;
     private LocalDateTime updatedAt;
+    @PrePersist
     public void Oncreate(){
       LocalDateTime now =LocalDateTime().now();
       this.createdAt = now;
       this.updatedAt = now;
+    }
+    @PreUpdate
+    public void Onupdate(){
+    this.updatedAt = now;
     }
 }
