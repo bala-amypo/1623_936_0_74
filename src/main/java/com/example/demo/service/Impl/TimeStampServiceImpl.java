@@ -10,16 +10,17 @@ import java.util.List;
 
 @Service 
 
-public class TServiceImpl implements StudentService{
+public class TimeStampServiceImpl implements TimeStampService{
 
-    @Autowired StudentRepo student;
+    @Autowired TimeStampRepo timestamp;
     
 @Override
- public StudentEntity postData(StudentEntity stu){
-      return student.save(stu);
+ public TimeStampEntity postData(TimeStampEntity time){
+      return timestamp.save(time);
 
  }
  @Override
- public List<StudentEntity>getAllData(){
-    return student.findAll();
+ public List<TimeStampEntity>getAllData(){
+    return tim.findAll();
  }
+}
