@@ -18,5 +18,6 @@ public class StudentId{
     private int id;
     private String idcardno;
     private int studentid;
-
+    @OneToOne
+    private StudentDetails students;
 }
