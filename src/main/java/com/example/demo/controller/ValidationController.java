@@ -19,8 +19,8 @@ public class ValidationController{
     public ValidationEntity sendData(@Valid @RequestBody ValidationEntity valid){
            return ser.postData(valid); 
     }
-    @GetMapping("/getid/{id}")
-public ValidationEntity getdataid(@PathVariable int id){
+    @GetMapping("/getdataid/{id}")
+public ValidationEntity getdatasid(@PathVariable int id){
     return ser. getStudentById(id);
 }
 }
