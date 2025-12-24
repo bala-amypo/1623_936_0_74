@@ -21,6 +21,8 @@ public class StudentsServiceImpl implements StudentsService {
 
         throw new StudentsException("Network issuse or serve issuse");
     }
+    return student;
+    }
 
     @Override
     public StudentsStructure getStudentById(int id) {
