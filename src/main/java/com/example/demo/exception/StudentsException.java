@@ -1,3 +1,7 @@
 package com.example.demo.exception;
 
-public class 
+public class extends RuntimeException{
+    public StudentsException(String message){
+    super(message);
+}
+}

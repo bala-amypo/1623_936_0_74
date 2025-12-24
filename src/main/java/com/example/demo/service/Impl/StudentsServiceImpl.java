@@ -14,7 +14,8 @@ public class StudentsServiceImpl implements StudentsService {
 
     @Override
     public StudentsStructure saveStudent(StudentsStructure student) {
-        return repository.save(student);
+        repository.save(student)
+        throw new Resourc
     }
 
     @Override
