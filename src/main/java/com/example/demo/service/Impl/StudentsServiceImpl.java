@@ -14,7 +14,7 @@ public class StudentsServiceImpl implements StudentsService {
 
     @Override
     public StudentsStructure saveStudent(StudentsStructure student) {
-        repository.save(student)
+        repository.save(student);
         throw new ResourceNotFound(message: "Network issuse or serve issuse");
     }
 
