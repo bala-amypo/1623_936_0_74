@@ -6,7 +6,7 @@ import org.springframework.stereotype.Service;
 import com.example.demo.entity.StudentsStructure;
 import com.example.demo.repository.StudentsRepository;
 import com.example.demo.exception.StudentsException;
-import org.
+import org.springframework.transaction.annotation.Transactional;
 
 @Service
 public class StudentsServiceImpl implements StudentsService {
@@ -17,6 +17,9 @@ public class StudentsServiceImpl implements StudentsService {
     @Override
     public StudentsStructure saveStudent(StudentsStructure student) {
         repository.save(student);
+        
+
+
         throw new StudentsException("Network issuse or serve issuse");
     }
 
