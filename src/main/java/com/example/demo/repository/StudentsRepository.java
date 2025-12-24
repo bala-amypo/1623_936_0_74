@@ -9,4 +9,6 @@ public interface StudentsRepository extends JpaRepository<StudentsStructure, Int
 
     @Query("SELECT s FROM StudentsStructure s WHERE s.studEmail =:email")
     List<StudentsStructure>findByStudEmail(@Param("email") String email);
+
+    @Query("SELECT")
 }
