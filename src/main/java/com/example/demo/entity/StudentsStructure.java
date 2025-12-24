@@ -10,7 +10,7 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class StudentStructure {
+public class StudentsStructure {
 
     @Id
     private int studid;
