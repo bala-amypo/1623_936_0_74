@@ -32,7 +32,7 @@ public class StudentsController {
         return service.findByStudEmail(email);
     }
     @GetMapping("/getecgpa/{cgpa}")
-    public List<StudentsStructure> gets2(@PathVariable String cgpa) {
+    public List<StudentsStructure> gets2(@PathVariable double cgpa) {
         return service.findByCgpa(cgpa);
     }
 }
