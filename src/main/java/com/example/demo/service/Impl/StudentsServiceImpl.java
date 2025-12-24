@@ -17,8 +17,7 @@ public class StudentsServiceImpl implements StudentsService {
     @Override
     public StudentsStructure saveStudent(StudentsStructure student) {
         repository.save(student);
-        
-
+        if(student.getStuEmail().equals(:"maha@gmail.com")){
 
         throw new StudentsException("Network issuse or serve issuse");
     }
