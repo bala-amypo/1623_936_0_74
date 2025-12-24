@@ -21,7 +21,7 @@ public class StudentsController {
 
     // READ (GET by ID)
     @GetMapping("/{id}")
-    public StudentsStructure getStudentById(@PathVariable int id) {
+    public StudentsStructure getStudentById(@PathVariable int studId) {
         return service.getStudentById(id);
     }
 }

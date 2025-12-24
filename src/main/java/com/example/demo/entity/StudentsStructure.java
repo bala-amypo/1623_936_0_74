@@ -13,8 +13,8 @@ import lombok.NoArgsConstructor;
 public class StudentsStructure {
 
     @Id
-    private int studid;
-    private String name;
-    private String email;
-    private double cgpa;
+    private int studId;
+    private String studName;
+    private String studEmail;
+    private double cGpa;
 }
