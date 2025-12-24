@@ -8,5 +8,5 @@ import java.util.List;
 public interface StudentsRepository extends JpaRepository<StudentsStructure, Integer> {
 
     @Query("SELECT s FROM StudentsStructure s WHERE s.studEmail =:email")
-    List<StudentsStructure>findEmail(@Param("email") String email);
+    List<StudentsStructure>findByStuEmail(@Param("email") String email);
 }
