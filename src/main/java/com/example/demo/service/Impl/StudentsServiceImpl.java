@@ -19,19 +19,21 @@ public class StudentsServiceImpl implements StudentsService {
     @Override
     public StudentsStructure saveStudent(StudentsStructure student) {
         repository.save(student);
-        if(student.getStudEmail().equals("mahakgm@gmail.com")){
 
-        throw new StudentsException("Network issuse or serve issuse");
-    }
-    return student;
+        if (student.getStudEmail().equals("mahakgm@gmail.com")) {
+            throw new StudentsException("Network issue or server issue");
+        }
+
+        return student;
     }
 
     @Override
     public StudentsStructure getStudentById(int id) {
         return repository.findById(id).orElse(null);
     }
-  @Override
- public List<StudentsStructure>getBysingleEmai(String email){
-    return repository.findByStudEmail(email);
- }
+
+    @Override
+    public List<StudentsStructure> findByStudEmail(String email) {
+        return repository.findByStudEmail(email);
+    }
 }
