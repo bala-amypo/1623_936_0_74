@@ -32,6 +32,6 @@ public class StudentsServiceImpl implements StudentsService {
     }
   @Override
  public List<StudentsStructure>getAllData(String email){
-    return repository.getBysingleEmail();
+    return repository.getBysingleEmail(email);
  }
 }
