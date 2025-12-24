@@ -10,4 +10,6 @@ public interface StudentsService {
     StudentsStructure getStudentById(int id);
 
     List<StudentsStructure> findByStudEmail(String email);
+
+    List<StudentsStructure> findByCgpa(double cgpa);
 }

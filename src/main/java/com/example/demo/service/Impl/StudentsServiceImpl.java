@@ -36,4 +36,8 @@ public class StudentsServiceImpl implements StudentsService {
     public List<StudentsStructure> findByStudEmail(String email) {
         return repository.findByStudEmail(email);
     }
+    @Override
+    public List<StudentsStructure> findByCgpa(double cgpa) {
+        return repository.findByCgpa(cgpa);
+    }
 }
