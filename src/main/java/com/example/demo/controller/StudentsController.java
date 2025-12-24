@@ -26,6 +26,6 @@ public class StudentsController {
     }
     @GetMapping("/getemail/{id}")
     public List<StudentsStructure> gets1(String email){
-        return service.getBysingleEmail(email);
+        return service.findByStudEmail(email)
     }
 }
