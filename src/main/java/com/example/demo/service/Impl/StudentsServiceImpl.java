@@ -29,6 +29,8 @@ public class StudentsServiceImpl implements StudentsService {
     public StudentsStructure getStudentById(int id) {
         return repository.findById(id).orElse(null);
     }
-    @override
-    public List<
+  @Override
+ public List<StudentsSturucture>getAllData(String email){
+    return repository.getBysingleEmail();
+ }
 }
