@@ -32,6 +32,6 @@ public class StudentsServiceImpl implements StudentsService {
     }
   @Override
  public List<StudentsStructure>getBysingleEmai(String email){
-    return repository.findByStudEmail();
+    return repository.findByStudEmail(email);
  }
 }
