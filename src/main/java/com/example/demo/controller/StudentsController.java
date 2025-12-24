@@ -8,20 +8,20 @@ import com.example.demo.service.StudentsService;
 
 @RestController
 @RequestMapping("/student")
-public class StudentController {
+public class StudentsController {
 
     @Autowired
-    private StudentService service;
+    private StudentsService service;
 
     // CREATE (POST)
     @PostMapping("/save")
-    public StudentStructure saveStudent(@RequestBody StudentsStructure student) {
+    public StudentsStructure saveStudent(@RequestBody StudentsStructure student) {
         return service.saveStudent(student);
     }
 
     // READ (GET by ID)
     @GetMapping("/{id}")
-    public StudentStructure getStudentById(@PathVariable int id) {
+    public StudentsStructure getStudentById(@PathVariable int id) {
         return service.getStudentById(id);
     }
 }
