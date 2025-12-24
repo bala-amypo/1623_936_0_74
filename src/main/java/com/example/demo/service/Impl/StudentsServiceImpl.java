@@ -13,7 +13,8 @@ public class StudentsServiceImpl implements StudentsService {
 
     @Autowired
     private StudentsRepository repository;
-
+    
+    @Transactional
     @Override
     public StudentsStructure saveStudent(StudentsStructure student) {
         repository.save(student);
