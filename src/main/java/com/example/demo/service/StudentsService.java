@@ -1,6 +1,7 @@
 package com.example.demo.service;
 
 import com.example.demo.entity.StudentsStructure;
+import java.util.List;
 
 public interface StudentsService {
 
