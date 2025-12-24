@@ -31,7 +31,7 @@ public class StudentsController {
     public List<StudentsStructure> gets1(@PathVariable String email) {
         return service.findByStudEmail(email);
     }
-    @GetMapping("/getemail/{email}")
+    @GetMapping("/getecgpa/{cgpa}")
     public List<StudentsStructure> gets2(@PathVariable String cgpa) {
         return service.findByCgpa(cgpa);
     }
