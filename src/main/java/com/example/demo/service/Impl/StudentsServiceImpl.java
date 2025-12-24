@@ -13,12 +13,12 @@ public class StudentsServiceImpl implements StudentsService {
 
     @Autowired
     private StudentsRepository repository;
-    
+
     @Transactional
     @Override
     public StudentsStructure saveStudent(StudentsStructure student) {
         repository.save(student);
-        if(student.getStuEmail().equals(:"maha@gmail.com")){
+        if(student.getStuEmail().equals("maha@gmail.com")){
 
         throw new StudentsException("Network issuse or serve issuse");
     }
