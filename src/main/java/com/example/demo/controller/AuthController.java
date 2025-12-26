@@ -8,17 +8,17 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.PathVariable;
-import com.example.demo.entity.StudentEntity;
-import com.example.demo.service.StudentService;
+import com.example.demo.entity.ExtraStudent;
+import com.example.demo.service.ExtraStudentService;
 import java.util.List;
 
 @RestController
-public class StudentController{
+public class AuthController{
 
-    @Autowired StudentService ser;
+    @Autowired ExtraStudentService ser;
     
     @PostMapping("/post")
-    public StudentEntity sendData(@RequestBody StudentEntity stu){
+    public ExtraStudent sendData(@RequestBody ExtraStudent stu){
            return ser.postData(stu); 
     }
     }
