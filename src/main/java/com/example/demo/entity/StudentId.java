@@ -9,8 +9,6 @@ import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
 import jakarta.persistence.OneToOne;
 import jakarta.persistence.JoinColumn;
-import jakarta.persistence.OneToMany;
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 @Entity
 @Data
@@ -25,8 +23,4 @@ public class StudentId{
     @OneToOne
     @JoinColumn(name="student_id")
     private StudentDetails students;
-
-    @OneToMany(mappedBy="student_idd" , cascade = CascadeType.ALL)
-    @JsonIgnoreProperties("student_idd")
-    private List<StudentDetails> students;
 }
