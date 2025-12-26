@@ -19,7 +19,9 @@ import com.example.demo.service.ExtraStudentService;
 @RestController
 @RequestMapping("/auth")
 public class AuthController {
+  
 
+    
     @Autowired
     ExtraStudentService ser;
     @Autowired
