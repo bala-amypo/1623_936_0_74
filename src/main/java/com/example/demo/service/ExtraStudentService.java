@@ -1,16 +1,10 @@
-package com.example.demo.repository;
+package com.example.demo.service; //header file
 
-import java.util.Optional;
+import com.example.demo.entity.StudentEntity;
 
-import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.data.jpa.repository.Query;
-import org.springframework.data.repository.query.Param;
-import org.springframework.stereotype.Repository;
+import java.util.List;
 
-import com.example.demo.entity.ExtraStudent;
-
-@Repository
-public interface ExtraStudentRepo extends JpaRepository<ExtraStudent, Long> {
-
+public interface StudentService{
+    StudentEntity postData(StudentEntity stu);
 
 }
