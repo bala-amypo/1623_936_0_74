@@ -21,9 +21,7 @@ import com.example.demo.service.ExtraStudentService;
 public class AuthController {
   
 
-    @Autowired
-    private JwtFilter jwtFilter;
-.addFilterBefore(jwtFilter,UsernamePasswordAuthenticationFilter.class);
+    
     @Autowired
     ExtraStudentService ser;
     @Autowired
