@@ -6,5 +6,5 @@ import java.util.List;
 
 public interface ExtraStudentService{
     ExtraStudent saveExtraStudent(ExtraStudent stu);
-
+ ExtraStudent CheckEmail(String email);
 }

@@ -24,5 +24,8 @@ public class ExtraStudentServiceImpl implements ExtraStudentService {
         extraStudent.setPassword(encoder.encode(extraStudent.getPassword()));
         return repo.save(extraStudent);
     }
-
+ @Override
+    public ExtraStudent CheckEmail(String email) {
+        return repo.FindByEmail(email);
+    }
 }
