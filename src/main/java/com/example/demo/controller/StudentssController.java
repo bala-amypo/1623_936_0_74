@@ -2,28 +2,28 @@ package com.example.demo.controller;
 
 import org.springframework.web.bind.annotation.*;
 
-import com.example.demo.entity.Student;
-import com.example.demo.service.StudentService;
+import com.example.demo.entity.Studentss;
+import com.example.demo.service.StudentssService;
 
 @RestController
 @RequestMapping("/students")
-public class StudentController {
+public class StudentssController {
 
-    private final StudentService service;
+    private final StudentssService service;
 
-    public StudentController(StudentService service) {
+    public StudentssController(StudentssService service) {
         this.service = service;
     }
 
     // POST
     @PostMapping
-    public Student saveStudent(@RequestBody Student student) {
+    public Studentss saveStudent(@RequestBody Studentss student) {
         return service.saveStudent(student);
     }
 
     // GET by ID
     @GetMapping("/{id}")
-    public Student getStudentById(@PathVariable Long id) {
+    public Studentss getStudentById(@PathVariable Long id) {
         return service.getStudentById(id);
     }
 }
