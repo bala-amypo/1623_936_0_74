@@ -24,4 +24,8 @@ public class StudentId{
     @OneToOne
     @JoinColumn(name="student_id")
     private StudentDetails students;
+
+    @OneToMany(mappedBy="student" , cascade = CascadeType.ALL)
+    @JsonIgnoreProperties("student")
+    private List<Student> 
 }
