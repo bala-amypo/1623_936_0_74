@@ -14,9 +14,6 @@ public class SwaggerConfig{
     @Bean
     public OpenAPI customOpenAPI() {
         return new OpenAPI()
-        @Configuration
-
-
         SecurityScheme bearerAuth = new SecurityScheme()
                 .type(SecurityScheme.Type.HTTP)
                 .scheme("bearer")
@@ -33,5 +30,3 @@ public class SwaggerConfig{
                         new Server().url("https://9148.pro604cr.amypo.ai/")
                 ));
         }
-}
-}
