@@ -1,9 +1,9 @@
-package com.example.demo.service.impl;
+package com.example.demo.service.Impl;
 
 import org.springframework.stereotype.Service;
 
-import com.example.demo.entity.Student;
-import com.example.demo.repository.StudentRepository;
+import com.example.demo.entity.Studentss;
+import com.example.demo.repository.StudentssRepository;
 import com.example.demo.service.StudentssService;
 
 @Service
