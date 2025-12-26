@@ -22,5 +22,8 @@ public class AuthController {
     public ExtraStudent register(@RequestBody ExtraStudent stu) {
         return ser.saveExtraStudent(stu);
     }
-
+@GetMapping("/getemail/{email}")
+    public List<StudentsStructure> gets1(@PathVariable String email) {
+        return service.findByStudEmail(email);
+    }
 }
