@@ -5,6 +5,6 @@ import com.example.demo.entity.ExtraStudent;
 import java.util.List;
 
 public interface ExtraStudentService{
-    ExtraStudent (ExtraStudent stu);
+    ExtraStudent saveExtraStudent(ExtraStudent stu);
 
 }
