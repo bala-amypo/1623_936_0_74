@@ -16,8 +16,12 @@ public class ExtraStudentServiceImpl implements ExtraStudentService {
     @Autowired
     ExtraStudentRepo repo;
 
-    @Override
-    public ExtraStudent saveExtraStudent(ExtraStudent stu) {
-        return repo.save(stu);
+     @Autowired
+    private PasswordEncoder encoder; 
+ @Override
+    public ExtraStudent saveExtraStudent(ExtraStudent extraStudent) {
+        extraStudent.setPassword(encoder.encode(extraStudent.getPassword()));
+        return repo.save(extraStudent);
     }
+
 }
