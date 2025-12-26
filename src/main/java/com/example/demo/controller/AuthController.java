@@ -18,7 +18,7 @@ public class AuthController{
     @Autowired ExtraStudentService ser;
     
     @PostMapping("/post")
-    public ExtraStudent sendData(@RequestBody ExtraStudent stu){
-           return ser.postData(stu); 
+    public ExtraStudent sendData(@RequestBody ExtraStudent student){
+           return ser.postData(student); 
     }
     }
