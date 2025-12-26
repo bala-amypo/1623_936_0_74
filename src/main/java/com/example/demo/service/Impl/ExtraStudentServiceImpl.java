@@ -9,6 +9,7 @@ import org.springframework.stereotype.Service;
 import com.example.demo.entity.ExtraStudent;
 import com.example.demo.repository.ExtraStudentRepo;
 import com.example.demo.service.ExtraStudentService;
+import org.springframework.security.crypto.password.PasswordEncoder;
 
 @Service
 public class ExtraStudentServiceImpl implements ExtraStudentService {
