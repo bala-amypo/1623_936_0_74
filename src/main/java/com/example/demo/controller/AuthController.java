@@ -10,6 +10,8 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import com.example.demo.entity.ExtraStudent;
 import com.example.demo.dto.AuthRequest;
 import com.example.demo.dto.AuthResponse;
+import com.example.demo.security.JwtUtil;
+
 import com.example.demo.service.ExtraStudentService;
 
 // import org.springframework.security.crypto.password.PasswordEncoder;
@@ -24,7 +26,7 @@ public class AuthController {
     PasswordEncoder encoder;
 
 
-    Autowired jwtUtil util;
+    @Autowired JwtUtil util;
 
     @PostMapping("/add")
     public ExtraStudent addExtraStudent(@RequestBody ExtraStudent stu) {
