@@ -12,5 +12,7 @@ import com.example.demo.entity.ExtraStudent;
 @Repository
 public interface ExtraStudentRepo extends JpaRepository<ExtraStudent, Long> {
 
+@Query("SELECT s FROM ExtraStudent s WHERE s.email=:email")
+    ExtraStudent FindByEmail(@Param("email") String email);
 
 }
