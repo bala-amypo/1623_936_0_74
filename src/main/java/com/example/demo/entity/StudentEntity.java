@@ -22,6 +22,9 @@ public class StudentEntity{
     private String password;
     private Date created;
 
+    @OneToMany(mappedBy = "student", cascade=CascadeType.ALL)
+    private List<Student> stu;
+
 }
 // public Date getCreated(){
 //     return created;
