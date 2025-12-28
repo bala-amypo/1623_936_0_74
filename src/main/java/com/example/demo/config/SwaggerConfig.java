@@ -24,10 +24,11 @@ public class SwaggerConfig{
                         new Components().addSecuritySchemes("bearerAuth", bearerAuth))
                 .addSecurityItem(
                         new SecurityRequirement().addList("bearerAuth"));
+    }
                 // You need to change the port as per your server
                 .servers(List.of(
                         new Server().url("https://9148.pro604cr.amypo.ai/")
                 ));
         }
-}
+
     
