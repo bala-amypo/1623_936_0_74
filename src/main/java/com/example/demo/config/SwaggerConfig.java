@@ -13,7 +13,7 @@ public class SwaggerConfig{
 
     @Bean
     public OpenAPI customOpenAPI() {
-        return new OpenAPI()
+        return new OpenAPI();
         SecurityScheme bearerAuth = new SecurityScheme()
                 .type(SecurityScheme.Type.HTTP)
                 .scheme("bearer")
@@ -24,10 +24,10 @@ public class SwaggerConfig{
                         new Components().addSecuritySchemes("bearerAuth", bearerAuth))
                 .addSecurityItem(
                         new SecurityRequirement().addList("bearerAuth"));
-    }
                 // You need to change the port as per your server
                 .servers(List.of(
                         new Server().url("https://9148.pro604cr.amypo.ai/")
                 ));
         }
+}
     
