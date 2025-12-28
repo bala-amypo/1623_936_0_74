@@ -7,8 +7,8 @@ import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 
-import com.example.OneToMany.entity.ExtraStudent;
-import com.example.OneToMany.repository.ExtraStudentRepo;
+import com.example.entity.entity.ExtraStudent;
+import com.example.entity.repository.ExtraStudentRepo;
     
 @Service
 public class CustomUserDetailsService implements UserDetailsService {
