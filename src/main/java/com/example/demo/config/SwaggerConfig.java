@@ -13,7 +13,7 @@ public class SwaggerConfig{
 
     @Bean
     public OpenAPI customOpenAPI() {
-        return new OpenAPI();
+        return new OpenAPI()
         SecurityScheme bearerAuth = new SecurityScheme()
                 .type(SecurityScheme.Type.HTTP)
                 .scheme("bearer")
